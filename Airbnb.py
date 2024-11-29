@@ -1,7 +1,6 @@
 import streamlit as st
 
 # Setting up page configuration
-icon = Image.open("ICN.png")
 st.set_page_config(page_title= "Airbnb Data Visualization | By Jafar Hussain",
                    page_icon= icon,
                    layout= "wide",

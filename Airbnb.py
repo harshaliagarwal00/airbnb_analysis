@@ -1,10 +1,4 @@
-# Importing Libraries
-import pandas as pd
-import pymongo
 import streamlit as st
-import plotly.express as px
-from streamlit_option_menu import option_menu
-from PIL import Image
 
 # Setting up page configuration
 icon = Image.open("ICN.png")
@@ -26,13 +20,6 @@ with st.sidebar:
                                    "nav-link-selected": {"background-color": "#FF5A5F"}}
                           )
 
-# CREATING CONNECTION WITH MONGODB ATLAS AND RETRIEVING THE DATA
-client = pymongo.MongoClient("Enter your connection string")
-db = client.sample_airbnb
-col = db.listingsAndReviews
-
-# READING THE CLEANED DATAFRAME
-df = pd.read_csv('Airbnb_data.csv')
 
 # HOME PAGE
 if selected == "Home":

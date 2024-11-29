@@ -1,5 +1,7 @@
 import streamlit as st
 
+def main():
+
 # HOME PAGE
 if selected == "Home":
     # Title Image
@@ -165,6 +167,9 @@ if selected == "Explore":
                                        color_continuous_scale='agsunset'
                             )
         st.plotly_chart(fig,use_container_width=True)
+
+if__name__== '__main__':
+    main()
         
         
         
